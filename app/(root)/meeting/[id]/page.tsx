@@ -42,7 +42,7 @@ import { useGetCallById } from '@/hooks/useGetCallById';
 import MeetingSetup from '@/components/MeetingSetup';
 import MeetingRoom from '@/components/MeetingRoom';
 
-const MeetingPage = () => {
+const Meeting = () => {
   const { id } = useParams();
   const { isLoaded, user } = useUser();
   const { call, isCallLoading } = useGetCallById(id);
@@ -67,7 +67,7 @@ const MeetingPage = () => {
         <StreamTheme>
 
         {!isSetupComplete ? (
-          <MeetingSetup  />
+          <MeetingSetup  setIsSetupComplete={setIsSetupComplete} />
         ) : (
           <MeetingRoom />
         )}
@@ -77,4 +77,4 @@ const MeetingPage = () => {
   );
 };
 
-export default MeetingPage;
+export default Meeting;
