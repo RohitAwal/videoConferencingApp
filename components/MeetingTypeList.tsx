@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import HomeCard from "./HomeCard";
 import { useRouter } from "next/navigation";
 
-import ReactDatePicker from "react-datepicker"
+import ReactDatePicker from "react-datepicker";
 
 import MeetingModal from "./MeetingModal";
 import { useUser } from "@clerk/nextjs";
@@ -74,6 +74,7 @@ const MeetingTypeList = () => {
       });
     }
   };
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
       <HomeCard
@@ -147,8 +148,8 @@ const MeetingTypeList = () => {
           title="Meeting Created"
           className="text-center"
           handleClick={() => {
-            // navigator.clipboard.writeText(meetingLink);
-            // toast({title: 'Link Copied'})
+            navigator.clipboard.writeText(meetingLink);
+            toast({title: 'Link Copied'})
           }}
           image="/icons/checked.svg"
           buttonIcon="/icond.copy.svg"

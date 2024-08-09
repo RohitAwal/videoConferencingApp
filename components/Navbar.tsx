@@ -15,7 +15,7 @@ const Navbar = () => {
           alt="Room"
           className="max-sm:size-10"
         />
-        <p className="text-[26px] font-extrabold text-white ">Room</p>
+        <p className="text-[26px] font-extrabold text-white ">Awaley Ko Adda</p>
       </Link>
       <div className="flex-between gap-5">
         <SignedIn>

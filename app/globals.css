@@ -57,6 +57,13 @@
 .cl-providerIcon__github {
   filter: invert(1);
 }
+/* .cl-logoImage{
+  tex
+} */
+
+.cl-logoImage{
+  content: "Awaley ko Adda";
+}
 .cl-internal-16vtwdp{
   display: none;
 }
