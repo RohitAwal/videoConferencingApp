@@ -28,7 +28,7 @@ export default function RootLayout({
           layout: {
             socialButtonsVariant: "iconButton",
             // logoImageUrl: "/icons/yoom-logo.svg",
-            logoImageUrl: "/icons/lege.png",
+            logoImageUrl: "/icons/leger.png",
             
           },
           variables: {
