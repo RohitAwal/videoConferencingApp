@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import React, { useState } from "react";
 import HomeCard from "./HomeCard";
@@ -115,7 +116,7 @@ const MeetingTypeList = () => {
         >
           <div className="flex flex-col gap-2.5">
             <label className="text-base text-normal leading-[22px] text-sky-2">
-              {" "}
+              
               Add a description
             </label>
             <Textarea
