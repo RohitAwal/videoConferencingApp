@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import HomeCard from "./HomeCard";
 import { useRouter } from "next/navigation";
 
-import ReactDatePicker from "react-datepicker";
+import ReactDatePicker from '../react-datepicker';
 
 import MeetingModal from "./MeetingModal";
 import { useUser } from "@clerk/nextjs";
